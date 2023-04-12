@@ -8,7 +8,8 @@
     "dev": "NODE_ENV=development nodemon index.js",
     "build:ui": "rm -rf build && cd ../note_front_end && npm run build && cp -r build ../note_back_end",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
-    "test": "NODE_ENV=test jest --verbose --runInBand"
+    "test": "NODE_ENV=test jest --verbose --runInBand",
+    "start:test": "NODE_ENV=test node index.js"
   },
   "author": "",
   "license": "ISC",
